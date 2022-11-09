@@ -7,7 +7,7 @@ In this project, below environment will be provisioned and storage accounts will
 
 ### Step 1
 #### Environment provision 
-A resource group named az104-07-rg0 is created through powershell. Using json templates (can be found in json folder) virtual network and virtual machine created.
+A resource group named az104-07-rg0 is created through powershell. A virtual network and a virtual machine are created using json template (can be found in json folder).
 
 ### Step 2
 #### Storage account creation
@@ -27,7 +27,7 @@ In this step I created a SAS token and a SAS URL to reach the file (it has priva
 
 ![Alt text](/screenshots/error%20message.jpg "Error message")
 
-Using above SAS URL we can reach the file.
+We can only reach the file using the SAS URL.
 
 Then I added a role assignment to myself as the storage blob data owner in order to change the authentication method to Azure AD User Account.
 
@@ -37,3 +37,6 @@ Then I added a role assignment to myself as the storage blob data owner in order
 
 ### Step 5
 #### Create and configure an Azure Files shares
+First, a file shares named az104-07-share is created.
+
+![Alt text](/screenshots/fileShare.jpg "Success")
